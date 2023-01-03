@@ -1,0 +1,4 @@
+https://www.rust-lang.org/
+rustup doc # 查看离线文档（参考书在文档中）
+rustup update # 更新
+rustup self uninstall # 卸载
