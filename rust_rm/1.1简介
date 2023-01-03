@@ -1,0 +1,45 @@
+bilibili：https://www.bilibili.com/video/BV1hp4y1k7SV/?p=2&spm_id_from=pageDriver&vd_source=8f0f356914bb94599d33bdf22e4c0536
+1.为什么要用rust
+    编写高效且可靠的软件；
+    可以替换C/C++，rust和他们拥有同样的性能，但是很多常见的bug在编译时就可以消灭；
+    通用编程语言，适用场景：
+        需要运行时的速度；
+        需要内存安全；
+        更好利用多处理器；
+2.与其他语言比较
+    C/C++性能非常好，但是类型系统和内存不太安全；
+    java、C# 拥有GC，能保证内存安全，也有很多优秀的特性，但是性能不行；
+    rust 
+        安全
+        无需GC
+        易于维护、调试，代码高效安全
+ 3.擅长的领域
+    高性能web service
+    web assembly（web汇编，简单来说提高了web运行效率；性能接近原生）
+    命令行工具
+    网络编程（信息的发送和接受）
+    嵌入式设备
+    系统编程
+4.rust与firefox
+5.用户和案例
+    google
+    amazon
+    蚂蚁金服
+    微软：winrt
+    system76
+    斯坦福和密歇根大学
+6.优点
+    性能
+    安全性
+    无所畏惧的并发
+7.缺点
+    难学
+8.注意
+    很多独享概念
+9.参考书：
+    The Rust Programming Language（https://doc.rust-lang.org/book/title-page.html）
+
+9.rust体系规划
+    基础入门
+
+
