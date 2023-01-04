@@ -1,0 +1,57 @@
+1.Cargo 
+    cargo 是rust的构建系统和包管理工具
+        - 构建代码、下载依赖库、构建这些库
+    安装rust会安装cargo
+        - cargo --version
+2.使用cargo创建项目
+    创建项目：cargo new hello_cargo （项目名称）
+        - 项目名称也是hello_cargo
+        - 会创建一个新的目录hello_cargo
+            cargo.toml  # 依赖包
+            src目录 # 存放源代码
+                - mian.rs # 主程序
+            初始化一个新的仓库，.gitigonre(r如果已经在仓库内，不会创建仓库)
+                - 可以使用其他的VCS（编译型Verilog模拟器）或不使用VCS：cargo new的时候使用--vcs这个flag
+3.Cargo.toml
+    TOML（Tom's Obvious Minimal Launguage）格式，是cargo的配置格式
+    package 是一个区域标题，表示下方内容是用来配置包的
+        - name：项目名
+        - version：项目版本
+        - author：项目作者（我用的2021版本，没有看到这个部分）
+        - edition：使用的rust版本（上面所说的2021是指的这个）
+    dependencies：另一个区域的开始，会列出依赖库；
+    在rust中，代码的包被称为crate；
+4.src/main.rs
+    cargo生成的main.rs在src目录下
+    而cargo.toml在项目顶层下
+    源代码都应该在src下
+    顶层目录可以放置：readme、许可信息、配置文件和其他与程序无关的文件
+    如果创建项目时没有使用cargo，也可以讲项目转换为使用cargo；
+        - 源代码文件移动到src下
+        - 创建爱你cargo.toml并填写相应的配置
+5.构建cargo项目cargo build
+    cargo build
+        - 创建可执行文件：target/debug/hello_cargo
+        - 运行可执行文件：./target/debug/hello_cargo
+    第一次运行cargo build会在顶层目录生成一个cargo.lock文件
+        - 改文件负责追踪项目以来的精确版本
+        - 不需要手动修改该文件
+6.构建和运行cargo项目cargo run
+    cargo run ：编译+执行
+        - 如果之前编译过并且晕啊代码没有修改，那么就会直接运行二进制文件
+7.cargo check
+    cargo check:检查代码，确保可以通过编译，但是不产生任何可执行文件
+    cargo check要比cargo build快的多
+        - 编写代码的时候可反复使用cargo check检查代码，提高编译效率
+8.发布构建
+    cargo build --release
+        - 编译时会进行优化
+            代码会运行更快，但是编译时间较长
+        - 会在target/release下而不是targer/debug下 可执行文件
+    两种配置
+        - 开发用的
+        - 用户用的
+
+
+
+    
