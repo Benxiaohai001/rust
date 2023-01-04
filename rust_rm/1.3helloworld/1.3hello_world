@@ -1,0 +1,18 @@
+1.编写rust程序
+    后缀名.rs
+    明明规范：hello_world
+2.编译与运行程序
+    编译：rustc main.rs
+    运行：
+        win：.\main.exe
+        linux: ./main
+3.程序解刨
+    定义函数：fn main(){}
+        - 没有参数，没有返回
+    main函数很特别，是每个rust可执行程序最先运行的代码
+    打印文本：println!("hello world");
+        - rust的缩进是4个空格而不是tab
+        - println!是一个rust macro（宏）
+            如果是函数就没有！
+        - “hello world”是一个字符串，是println！的参数
+        - 这行代码以；结尾
